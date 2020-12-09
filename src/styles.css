@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Martel", serif;
+  font-weight: 400;
+}
+h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  color: rgb(182, 214, 224);
+}
+.add-todo-container {
+  padding: 1rem;
+  background-image: url("https://i.pinimg.com/originals/b7/aa/79/b7aa798833c2f415937c8da6eeef2f16.jpg");
+  text-align: center;
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.248);
+}
+.add-todo-container input {
+  outline: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 15px;
+  border: none;
+  width: 60%;
+}
+
+.todo-app {
+  font-family: sans-serif;
+}
+
+/** add todo **/
+.add-todo {
+  margin-left: 0.5rem;
+}
+
+/** todo list **/
+.todo-list {
+  margin-top: 1rem;
+  text-align: left;
+  list-style: none;
+  width: 60%;
+  margin: auto;
+}
+button {
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  outline: 0;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: #e00202;
+  color: white;
+  border: 0.5px solid rgba(0, 0, 0, 0.178);
+  border-radius: 5px;
+  margin: 15px;
+}
+button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: rgb(20, 204, 60);
+  transform: translateY(-2px);
+  color: black;
+}
+
+/** todo item **/
+.todo-item {
+  font-family: monospace;
+  cursor: pointer;
+  line-height: 1.5;
+}
+.todo-item__text--completed {
+  text-decoration: line-through;
+  color: rgb(173, 126, 126);
+}
+
+/** visibility filters **/
+.filter {
+  padding: 0.3rem 0;
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+.filter--active {
+  border-bottom: 1px solid black;
+}
+
